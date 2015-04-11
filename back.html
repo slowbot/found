@@ -4,12 +4,57 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Foundation 5</title>
-  		<link href="/assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="/assets/css/base.min.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
   		<script src="/bower_components/foundation/js/vendor/modernizr.js"></script>
 	</head>
 	<body>
-		 
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+      <nav class="tab-bar hide-for-large-up">
+  <section class="left-small">
+    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+  </section>
+
+  <section class="middle tab-bar-section">
+    <h1 class="title">Ministry of Space</h1>
+  </section>
+</nav>
+
+<aside class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Visit</a></li>
+    <li><a href="#">Exhibitions</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Educate</a></li>
+    <li><a href="#">Reources</a></li>
+  </ul>
+</aside>
+
+<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+  
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Ministry of Space</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Visit</a></li>
+      <li><a href="#">Exhibitions</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Educate</a></li>
+      <li><a href="#">Reources</a></li>
+    </ul>
+  </section>
+  
+</nav>
+		   
   <div class="row">
     <div class="large-12 columns">
       <h1>Welcome to Foundation 5</h1>
@@ -167,5 +212,7 @@
 $(document).foundation();
 </script>
 
+      </div>
+    </div> 
 	</body>
 </html>

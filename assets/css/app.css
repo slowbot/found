@@ -1273,11 +1273,11 @@ button, .button {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
-  font-size: 1rem;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5625rem;
+  padding-left: 3rem;
+  font-size: 0.875rem;
   background-color: #00baff;
   border-color: #0095cc;
   color: #FFFFFF;
@@ -1327,11 +1327,11 @@ button, .button {
     button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
       color: #FFFFFF; }
   button.large, .button.large {
-    padding-top: 1.125rem;
-    padding-right: 2.25rem;
-    padding-bottom: 1.1875rem;
-    padding-left: 2.25rem;
-    font-size: 1.25rem; }
+    padding-top: 1.75rem;
+    padding-right: 3.5rem;
+    padding-bottom: 1.8125rem;
+    padding-left: 3.5rem;
+    font-size: 1.125rem; }
   button.small, .button.small {
     padding-top: 0.875rem;
     padding-right: 1.75rem;
@@ -1651,15 +1651,15 @@ button::-moz-focus-inner {
     .button-group.round.stack > *, .button-group.round.stack > * > a, .button-group.round.stack > * > button, .button-group.round.stack > * > .button {
       border-radius: 0; }
     .button-group.round.stack > *:first-child, .button-group.round.stack > *:first-child > a, .button-group.round.stack > *:first-child > button, .button-group.round.stack > *:first-child > .button {
-      -webkit-top-left-radius: 1rem;
-      -webkit-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; }
+      -webkit-top-left-radius: 1.5rem;
+      -webkit-top-right-radius: 1.5rem;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem; }
     .button-group.round.stack > *:last-child, .button-group.round.stack > *:last-child > a, .button-group.round.stack > *:last-child > button, .button-group.round.stack > *:last-child > .button {
-      -webkit-bottom-left-radius: 1rem;
-      -webkit-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem; }
+      -webkit-bottom-left-radius: 1.5rem;
+      -webkit-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem; }
   @media only screen and (min-width:40.063em) {
     .button-group.round.stack-for-small > * {
       margin: 0 -2px;
@@ -1703,15 +1703,15 @@ button::-moz-focus-inner {
       .button-group.round.stack-for-small > *, .button-group.round.stack-for-small > * > a, .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * > .button {
         border-radius: 0; }
       .button-group.round.stack-for-small > *:first-child, .button-group.round.stack-for-small > *:first-child > a, .button-group.round.stack-for-small > *:first-child > button, .button-group.round.stack-for-small > *:first-child > .button {
-        -webkit-top-left-radius: 1rem;
-        -webkit-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem; }
+        -webkit-top-left-radius: 1.5rem;
+        -webkit-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem; }
       .button-group.round.stack-for-small > *:last-child, .button-group.round.stack-for-small > *:last-child > a, .button-group.round.stack-for-small > *:last-child > button, .button-group.round.stack-for-small > *:last-child > .button {
-        -webkit-bottom-left-radius: 1rem;
-        -webkit-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem; } }
+        -webkit-bottom-left-radius: 1.5rem;
+        -webkit-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem; } }
   .button-group.even-2 li {
     margin: 0 -2px;
     display: inline-block;
@@ -5558,25 +5558,155 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-.alpha {
-  font-size: 4rem; }
+.t-caps {
+  text-transform: uppercase; }
 
-.beta {
-  font-size: 1.75rem; }
+body {
+  font-family: "Freight Sans Pro Book", "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; }
 
-.gamma {
-  font-size: 1.375rem; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Freight Sans Pro Book", "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
-.delta {
-  font-size: 1.25rem; }
+h1, .alpha {
+  font-size: 3.75rem;
+  line-height: 1.5;
+  font-family: "DIN Next Std Cyrillic Medium", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000; }
+  @media screen and (min-width: 40em) {
+    h1, .alpha {
+      font-size: 6.5rem;
+      line-height: 1.25; } }
+  @media screen and (min-width: 64em) {
+    h1, .alpha {
+      font-size: 5.5rem;
+      line-height: 1.5; } }
 
-.epsilon {
-  font-size: 1.125rem; }
+h2, .beta {
+  font-size: 1.125rem;
+  line-height: 1.45;
+  color: #000; }
+  @media screen and (min-width: 40em) {
+    h2, .beta {
+      font-size: 2.675rem;
+      line-height: 1.5; } }
+  @media screen and (min-width: 64em) {
+    h2, .beta {
+      font-size: 3.75rem;
+      line-height: 1.45; } }
 
-.zeta {
-  font-size: 1rem; }
+h3, .gamma {
+  font-size: 1.125rem;
+  line-height: 1.136; }
+  @media screen and (min-width: 40em) {
+    h3, .gamma {
+      font-size: 1.5rem;
+      line-height: 1.25; } }
+  @media screen and (min-width: 64em) {
+    h3, .gamma {
+      font-size: 1.375rem;
+      line-height: 1.5; } }
+
+h4, .delta {
+  font-size: 1.0625rem;
+  line-height: 1.5; }
+  @media screen and (min-width: 40em) {
+    h4, .delta {
+      font-size: 1.25rem;
+      line-height: 1.5; } }
+  @media screen and (min-width: 64em) {
+    h4, .delta {
+      font-size: 1.125rem;
+      line-height: 1.5; } }
+
+h5, .epsilon {
+  font-size: 1rem;
+  line-height: 1.58; }
+  @media screen and (min-width: 40em) {
+    h5, .epsilon {
+      font-size: 1.0625rem;
+      line-height: 1.714; } }
+  @media screen and (min-width: 64em) {
+    h5, .epsilon {
+      font-size: 1rem;
+      line-height: 1.58; } }
+
+h6, .zeta {
+  font-size: .8125rem;
+  line-height: 1.715; }
+  @media screen and (min-width: 40em) {
+    h6, .zeta {
+      font-size: .8125rem;
+      line-height: 1.75; } }
+  @media screen and (min-width: 64em) {
+    h6, .zeta {
+      font-size: .8125rem;
+      line-height: 1.715; } }
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 40em) {
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5; } }
+  @media screen and (min-width: 64em) {
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5; } }
+
+a {
+  text-decoration: none; }
+
+.omega {
+  font-size: .6875rem;
+  line-height: 1.5; }
+  @media screen and (min-width: 40em) {
+    .omega {
+      font-size: .6875rem;
+      line-height: 1.5; } }
+  @media screen and (min-width: 64em) {
+    .omega {
+      font-size: .6875rem;
+      line-height: 1.5; } }
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0; }
+  ul li, ol li, dl li {
+    margin: 0;
+    padding: 0; }
+
+ul, ul li ul {
+  list-style: none;
+  margin: 0; }
+
+dl dt, dl dd {
+  margin: 0; }
+
+code {
+  font-family: "DIN Next Slab Light", "Lora", Georgia, Times, serif; }
+
+.serif {
+  font-family: "DIN Next Slab Light", "Lora", Georgia, Times, serif; }
+
+.t-spaced {
+  font-family: "DIN Next Pro Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .35rem; }
 
 .t-caps {
+  font-family: "DIN Next Pro Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .125rem; }
+
+.button, button {
+  font-family: "DIN Next Pro Regular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .125rem;
   text-transform: uppercase; }
 
 .bg-wash {
@@ -5590,6 +5720,8 @@ th.hide-for-touch {
 
 .bg-darken {
   background-color: #333; }
+  .bg-darken a {
+    color: #fff; }
 
 .t-bright {
   color: #fff; }
@@ -5597,19 +5729,15 @@ th.hide-for-touch {
 .no-margin {
   margin: 0 !important; }
 
+.rhythm {
+  margin-bottom: 4.5rem !important; }
+
 .hero-offset.center {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
-
-@media only screen and (min-width:64.063em) {
-  .hero-offset.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); } }
 
 .hero {
   padding: 100% 0 0 0; }
@@ -5678,6 +5806,9 @@ figure {
   padding: .5rem 1rem; }
   .h-section h1, .h-section h2, .h-section h3, .h-section h4, .h-section h5, .h-section h6 {
     margin: 0; }
+
+.h-nav {
+  padding: 1.25rem 0; }
 
 .hero {
   display: block;
